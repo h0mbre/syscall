@@ -5,7 +5,8 @@ Just a hacky script to display calling conventions for syscalls for `x86` and `x
 ## Usage
 
 To display both at once, just use both flags. To display one or the other, just use the one flag. 
-`python3 syscall <syscall> -x32 -x64`
+
+`python3 syscall.py <syscall> -x32 -x64`
 ```
 h0mbre:~$ python3 syscall.py read -x32 -x64
 
