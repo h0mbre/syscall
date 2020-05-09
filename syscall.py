@@ -53,7 +53,7 @@ def parse64():
         with open("64.txt", "r") as f:
             lines = f.readlines()
     except:
-        print("Unable to open 64.txt, is the file in this directory?")
+        print("Unable to open 64.txt, wtf?")
         sys.exit(1)
 
     for x in lines:
@@ -81,7 +81,7 @@ def parse32():
         with open("32.txt", "r") as f:
             lines = f.readlines()
     except:
-        print("Unable to open 32.txt, is the file in this directory?")
+        print("Unable to open 32.txt, wtf?")
         sys.exit(1)
 
     for x in lines:
