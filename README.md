@@ -82,4 +82,6 @@ x86_64 Calling Convention:
 ```
 
 ## Installation
-You will have to `pip3 install beautifultable`
+You will have to `pip3 install beautifultable`.
+
+The script needs access to the two text files in the repo as well, obviously you can set that up however you like. 
