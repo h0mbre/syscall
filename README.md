@@ -80,3 +80,6 @@ x86_64 Calling Convention:
 | r9  |      arg5      |
 +-----+----------------+
 ```
+
+## Installation
+You will have to `pip3 install beautifultable`
