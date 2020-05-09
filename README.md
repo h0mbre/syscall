@@ -4,6 +4,7 @@ Just a hacky script to display calling conventions for syscalls for `x86` and `x
 
 ## Usage
 
+To display both at once, just use both flags. To display one or the other, just use the one flag. 
 `python3 syscall <syscall> -x32 -x64`
 ```
 h0mbre:~$ python3 syscall_tutor.py read -x32 -x64
@@ -33,4 +34,45 @@ h0mbre:~$ python3 syscall_tutor.py read -x32 -x64
 +-----+-----------------+
 | rdx |  size_t count   |
 +-----+-----------------+
+```
+
+To display a generic calling convention for either architecture, same rules apply just use `'cheat'` as the syscall name.
+```
+x86 Calling Convention:
+
++-----+----------------+
+| eax | syscall/return |
++-----+----------------+
+| ebx |      arg0      |
++-----+----------------+
+| ecx |      arg1      |
++-----+----------------+
+| edx |      arg2      |
++-----+----------------+
+| esi |      arg3      |
++-----+----------------+
+| edi |      arg4      |
++-----+----------------+
+| ebp |      arg5      |
++-----+----------------+
+
+
+
+x86_64 Calling Convention:
+
++-----+----------------+
+| rax | syscall/return |
++-----+----------------+
+| rdi |      arg0      |
++-----+----------------+
+| rsi |      arg1      |
++-----+----------------+
+| rdx |      arg2      |
++-----+----------------+
+| r10 |      arg3      |
++-----+----------------+
+| r8  |      arg4      |
++-----+----------------+
+| r9  |      arg5      |
++-----+----------------+
 ```
