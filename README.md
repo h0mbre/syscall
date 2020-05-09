@@ -7,7 +7,7 @@ Just a hacky script to display calling conventions for syscalls for `x86` and `x
 To display both at once, just use both flags. To display one or the other, just use the one flag. 
 `python3 syscall <syscall> -x32 -x64`
 ```
-h0mbre:~$ python3 syscall_tutor.py read -x32 -x64
+h0mbre:~$ python3 syscall.py read -x32 -x64
 
 'read' calling convention for x86 (32-bit):
 
@@ -38,7 +38,10 @@ h0mbre:~$ python3 syscall_tutor.py read -x32 -x64
 
 To display a generic calling convention for either architecture, same rules apply just use `'cheat'` as the syscall name.
 ```
+h0mbre:~$ python3 syscall.py cheat -x32 -x64
+
 x86 Calling Convention:
+
 
 +-----+----------------+
 | eax | syscall/return |
